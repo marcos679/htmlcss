@@ -1,0 +1,35 @@
+@font-face {
+    font-family: Allura-Regular;
+    src: url("Allura-Regular.otf");
+}
+body {
+	background-color:#838892;
+	width:600px;
+	line-height:150%;
+}
+h3 {
+  font-style:italic;
+  color:blue;
+  text-align:center;
+}
+h2 {
+	text-align:center;
+	font-family: "Allura-Regular", "Lucida Sans Unicode", "Arial", "sans-serif";
+}
+p {
+	text-indent:5px;
+}
+.impair{
+	background-color:#5BBDBF;
+}
+.pair {
+	background-color:#FF5850;
+}
+#img-beware {
+	height: 300px;
+}
+.skill{
+	font-style:italic;
+	color:red;
+	font-weight:bold;
+}
