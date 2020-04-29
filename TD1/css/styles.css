@@ -6,18 +6,22 @@ body {
 	background-color:#838892;
 	width:600px;
 	line-height:150%;
+
 }
 h3 {
   font-style:italic;
   color:blue;
   text-align:center;
+  border: 1px solid #CCCCCC;
 }
 h2 {
 	text-align:center;
 	font-family: "Allura-Regular", "Lucida Sans Unicode", "Arial", "sans-serif";
+  padding: 10px 0px;
 }
 p {
 	text-indent:5px;
+	margin: 30px 0px;
 }
 .impair{
 	background-color:#5BBDBF;
@@ -27,9 +31,46 @@ p {
 }
 #img-beware {
 	height: 300px;
+	float: right;
 }
 .skill{
 	font-style:italic;
 	color:red;
 	font-weight:bold;
+}
+a {
+	text-decoration:none;
+}
+a:visited {
+	color:#0088FF;
+}
+a:hover {
+	color:orange;
+}
+thead {
+	background-color:#00AAFF;
+}
+table .skill {
+	color:#640051;
+	padding: 0px 5px;
+}
+tbody tr:nth-child(even) {
+	background-color: #CCC;
+}
+tbody tr:nth-child(odd) {
+	background-color: white;
+}
+td {
+	text-align: center;
+}
+img {
+	float: left;
+}
+.clearleft {
+	clear:left;
+}
+#icones_lien {
+	position:fixed; 
+	bottom:20px;
+	right:20px;
 }
