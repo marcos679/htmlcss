@@ -4,9 +4,9 @@
 }
 body {
 	background-color:#838892;
-	width:900px;
+	width:100%;
 	line-height:150%;
-
+	margin:auto;
 }
 h3 {
   font-style:italic;
@@ -112,14 +112,20 @@ main {
 	position:relative;
 	display:flex;
 	justify-content:space-between;
+	flex: 0 0;
 }
 article {
-	width:60%;
+	/*width:300px;
+	max-width:500px;
+	min-width:200px;*/
 	background-color:#CCC;
+	flex-grow:4;
 }
 aside {
-	width: 30%;
 	background-color:#CCC;
+	/*width: 200;
+	max-width:250px;
+	min-width:150px;*/
 }
 header {
 	position:relative;
@@ -133,4 +139,72 @@ nav > div:hover > .puce {
 }
 .submenu div:hover .puce {
 	visibility:visible;
+}
+.burger {
+	display:none;
+}
+#menu2{
+	display:none;
+}
+.burger:hover #menu2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+/* Small screens */
+@media all and (max-width: 768px) {
+  article {
+    flex-grow:2;
+  }
+  nav {
+	display:none;
+  }
+  .burger {
+	display:flex;
+	border: 1px solid black;
+	background:skyblue;
+  }
+  .burger img {
+	position:relative;
+	top:0px;
+	right:0px;
+/*	width:80vw; 
+	height:100vh; 
+*/  }
+}
+/*	
+	--breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+*/
+@media all and (max-width: 480px) {
+  main {
+    flex-direction:column;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .tableau {
+    visibility:hidden;
+  }
+}
+@media all and (max-width: 168px) {
+  nav {
+    display: none;
+  }
+  main {
+	display: none;
+  }
+  footer {
+	display: none;
+  }
+  cite {
+	  display:none;
+  }
+  blockquote {
+	display:flex;
+	margin: 0px;
+  }
 }
